@@ -47,7 +47,7 @@
 
     xorg.xdpyinfo xorg.xbacklight xclip
 
-    lastpass-cli
+    lastpass-cli htop
 
     ranger
 
