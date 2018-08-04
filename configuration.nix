@@ -93,7 +93,7 @@
 
   # Fonts
   fonts.fonts = with pkgs; [
-    meslo-lg
+    terminus_font
   ];
 
   # DPI
