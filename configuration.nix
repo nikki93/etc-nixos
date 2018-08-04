@@ -60,6 +60,8 @@
     ripgrep
 
     emacs
+
+    love
   ];
 
   # Show manual in Ctrl+Alt+F8
