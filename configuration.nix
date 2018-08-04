@@ -45,14 +45,19 @@
 
     wget vim
 
-    xorg.xdpyinfo xclip rxvt_unicode
+    xorg.xdpyinfo xorg.xbacklight xclip
 
     lastpass-cli
+
+    ranger
+
+    scrot feh
 
     #((import <nixos-unstable> {}).luakit.overrideAttrs ({ buildInputs, ... }: { buildInputs = buildInputs ++ [ glib-networking ]; }))
     surf dmenu
 
     git
+    ripgrep
 
     emacs
   ];
@@ -84,16 +89,21 @@
     windowManager.awesome.enable = true;
   };
 
+  # Fonts
+  fonts.fonts = with pkgs; [
+    meslo-lg
+  ];
+
   # DPI
   services.xserver.dpi = 120;
   fonts.fontconfig.dpi = 120;
 
   # Trackpoint
-  hardware.trackpoint = {
-    enable = true;
-    sensitivity = 200;
-    speed = 225;
-  };
+  # hardware.trackpoint = {
+  #   enable = true;
+  #   sensitivity = 800;
+  #   speed = 800;
+  # };
 
   # Emacs
   services.emacs.enable = true;
