@@ -41,11 +41,9 @@
 
   # Packages
   environment.systemPackages = with pkgs; [
-    acpi
-
     wget vim
 
-    xorg.xdpyinfo xorg.xbacklight xclip
+    acpi xorg.xdpyinfo xorg.xbacklight xclip xsel
 
     lastpass-cli htop
 
