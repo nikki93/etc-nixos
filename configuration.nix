@@ -40,14 +40,15 @@
   };
 
   # Packages
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     wget vim
 
-    acpi xorg.xdpyinfo xorg.xbacklight xclip xsel
+    acpi xorg.xbacklight xclip xsel
 
-    lastpass-cli htop
+    dropbox-cli lastpass-cli
 
-    ranger
+    htop ranger
 
     scrot feh
 
@@ -64,8 +65,9 @@
 
     firefox
 
-    git
-    ripgrep
+    git ripgrep
+
+    python
 
     emacs
 
