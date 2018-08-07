@@ -56,7 +56,7 @@
 
     git ripgrep
 
-    python
+    gdb ycmd python
 
     emacs
 
