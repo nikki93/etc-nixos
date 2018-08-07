@@ -98,13 +98,6 @@
   services.xserver.dpi = 120;
   fonts.fontconfig.dpi = 120;
 
-  # Trackpoint
-  # hardware.trackpoint = {
-  #   enable = true;
-  #   sensitivity = 800;
-  #   speed = 800;
-  # };
-
   # Emacs
   services.emacs.enable = true;
 
