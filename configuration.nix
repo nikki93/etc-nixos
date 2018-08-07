@@ -25,7 +25,7 @@
     defaultLocale = "en_US.UTF-8";
   };
 
-  # Set your time zone.
+  # Time zone
   time.timeZone = "America/Los_Angeles";
 
   # User
