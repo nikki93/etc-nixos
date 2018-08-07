@@ -63,9 +63,6 @@
     love
   ];
 
-  # Show manual in Ctrl+Alt+F8
-  services.nixosManual.showManual = true;
-
   # Bash
   programs.bash.enableCompletion = true;
 
