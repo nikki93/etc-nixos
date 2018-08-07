@@ -42,7 +42,7 @@
   # Packages
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    wget vim fzf
+    wget vim fzf unzip
 
     acpi xorg.xbacklight xclip xsel
 
