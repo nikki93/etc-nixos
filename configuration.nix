@@ -16,7 +16,7 @@
 
   # Networking
   networking.hostName = "nikki-nixos";
-  networking.wireless.enable = true;
+  networking.networkmanager.enable = true;
 
   # Internationalisation
   i18n = {
