@@ -100,6 +100,7 @@
 
   # Emacs
   services.emacs.enable = true;
+  services.emacs.defaultEditor = true;
 
   # NixOS release version
   system.stateVersion = "18.03";
