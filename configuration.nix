@@ -35,7 +35,7 @@
     home = "/home/nikki";
     description = "Nikhilesh Sigatapu";
     uid = 1000;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "vboxusers" ];
     createHome = true;
   };
 
@@ -101,6 +101,9 @@
   # Emacs
   services.emacs.enable = true;
   services.emacs.defaultEditor = true;
+
+  # VirtualBox
+  virtualisation.virtualbox.host.enable = true;
 
   # NixOS release version
   system.stateVersion = "18.03";
