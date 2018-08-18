@@ -26,7 +26,8 @@
   };
 
   # Time zone
-  time.timeZone = "America/Los_Angeles";
+  #time.timeZone = "America/Los_Angeles";
+  time.timeZone = "America/New_York";
 
   # User
   users.users.nikki = {
@@ -50,7 +51,7 @@
 
     htop ranger
 
-    scrot feh mupdf
+    scrot peek feh mupdf gimp aseprite
 
     firefox
 
@@ -60,7 +61,7 @@
 
     emacs
 
-    love
+    steam
   ];
 
   # Bash
@@ -102,8 +103,18 @@
   services.emacs.enable = true;
   services.emacs.defaultEditor = true;
 
+  # Firefox
+  nixpkgs.config.firefox = {
+    enableAdobeFlash = true;
+    enableAdobeFlashDRM = true;
+  };
+
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
+
+  # For Steam
+  hardware.opengl.driSupport32Bit = true;
+  hardware.pulseaudio.support32Bit = true;
 
   # NixOS release version
   system.stateVersion = "18.03";
