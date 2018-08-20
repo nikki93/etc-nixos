@@ -51,15 +51,21 @@
 
     htop ranger
 
-    scrot peek feh mupdf gimp aseprite
+
+    scrot peek feh mupdf
+
+    gimp aseprite
+
 
     firefox
 
+
     git ripgrep
 
-    gdb ycmd python
+    gdb ycmd python racket
 
     emacs
+
 
     steam
   ];
