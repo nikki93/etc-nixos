@@ -98,7 +98,7 @@
 
   # Fonts
   fonts.fonts = with pkgs; [
-    terminus_font
+    terminus_font fira-mono
   ];
 
   # DPI
