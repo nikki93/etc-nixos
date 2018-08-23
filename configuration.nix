@@ -62,7 +62,7 @@
 
     git ripgrep
 
-    gdb ycmd python racket
+    gdb ycmd python racket rustc cargo rustracer rustPlatform.rustcSrc
 
     emacs
 
