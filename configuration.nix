@@ -52,7 +52,7 @@
     htop ranger
 
 
-    scrot peek feh mupdf
+    scrot peek feh mupdf simplescreenrecorder
 
     gimp aseprite
 
