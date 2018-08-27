@@ -96,6 +96,10 @@
     windowManager.awesome.enable = true;
   };
 
+  # Support 32-bit programs (such as Steam, Wine, ...)
+  hardware.opengl.driSupport32Bit = true;
+  hardware.pulseaudio.support32Bit = true;
+
   # Fonts
   fonts.fonts = with pkgs; [
     terminus_font fira-mono
@@ -117,10 +121,7 @@
 
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
-
-  # For Steam
-  hardware.opengl.driSupport32Bit = true;
-  hardware.pulseaudio.support32Bit = true;
+  nixpkgs.config.virtualbox.enableExtensionPack = true;
 
   # NixOS release version
   system.stateVersion = "18.03";
