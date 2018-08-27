@@ -81,20 +81,27 @@
   services.xserver = {
     enable = true;
 
+    videoDrivers = [ "intel" "nvidia" ];
+
     layout = "us";
     xkbOptions = "eurosign:e";
     libinput.enable = true;
 
-    displayManager.slim = {
+    displayManager.ssdm = {
       enable = true;
-      theme = pkgs.fetchurl {
-        url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
-        sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
-      };
-    };
+    }
+
+    # displayManager.slim = {
+    #   enable = true;
+    #   theme = pkgs.fetchurl {
+    #     url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
+    #     sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
+    #   };
+    # };
 
     windowManager.awesome.enable = true;
   };
+  hardware.bumblebee.enable = true;
 
   # Support 32-bit programs (such as Steam, Wine, ...)
   hardware.opengl.driSupport32Bit = true;
