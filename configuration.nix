@@ -17,6 +17,7 @@
   # Networking
   networking.hostName = "nikki-nixos";
   networking.networkmanager.enable = true;
+  networking.firewall.enable = false; # I serve things to my phone a lot...
 
   # Internationalisation
   i18n = {
