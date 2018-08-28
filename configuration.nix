@@ -48,7 +48,7 @@
 
     acpi xorg.xbacklight xclip xsel
 
-    dropbox-cli lastpass-cli
+    dropbox-cli lastpass-cli config.services.samba.package
 
     htop ranger
 
@@ -123,6 +123,24 @@
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
   nixpkgs.config.virtualbox.enableExtensionPack = true;
+
+  # Samba sharing
+  services.samba = {
+    enable = true;
+    securityType = "user";
+    shares = {
+      Development = {
+        path = "/home/nikki/Development";
+        browseable = "yes";
+        "read only" = "no";
+        "guest ok" = "no"; # Changed this after it last worked
+        "create mask" = "0644";
+        "directory mask" = "0755";
+        "force user" = "nikki";
+        # "force group" = "users";
+      };
+    };
+  };
 
   # NixOS release version
   system.stateVersion = "18.03";
